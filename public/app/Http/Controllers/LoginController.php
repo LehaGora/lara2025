@@ -32,7 +32,7 @@ class LoginController extends Controller
 
         $validated = $request->validated();
 
-        if (Auth::attempt( [ 'email' => $validated['email'], 'password' => $validated['password'], 'id' => 22 ] )) {
+        if (Auth::attempt( [ 'email' => $validated['email'], 'password' => $validated['password'] ] )) {
             return redirect()->intended('session');
         }
 
