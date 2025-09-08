@@ -38,7 +38,7 @@ Route::get('/session', function (Request $request) {
     $request->session()->put('user.teams', 'developers');
     //$request->session()->regenerate();
     //$request->session()->flash('status', 'Задача выполнена успешно!');
-    //dd(session('_token'));
+    //dd(session('_token'));11111111111111
     dd($request->session()->all(), Auth::user());
 })->name('session');
 
