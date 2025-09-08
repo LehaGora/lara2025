@@ -3,7 +3,6 @@
 @section('title', 'Welcome Login')
 
 @section('bootstrap')
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     @vite(['resources/css/bootstrap.min.css'])
 @endsection
 
